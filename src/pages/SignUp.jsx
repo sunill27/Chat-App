@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { authStore } from "../store/authStore";
+import { useAuthStore } from "../store/useAuthStore";
 import {
   Eye,
   EyeOff,
@@ -21,7 +21,7 @@ const SignUp = () => {
     password: "",
   });
 
-  const { signUp, isSigningUp } = authStore();
+  const { signUp, isSigningUp } = useAuthStore();
 
   const validateForm = () => {
     //Name Validation:

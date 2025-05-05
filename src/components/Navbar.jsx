@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { authStore } from "../store/authStore";
+import { useAuthStore } from "../store/useAuthStore";
 import { LogOut, MessageSquare, Settings, User } from "lucide-react";
 
 const Navbar = () => {
-  const { logout, authUser } = authStore();
+  const { logout, authUser } = useAuthStore();
   return (
     <>
       <header className="bg-base-100/80 border-b border-base-300 fixed w-full top-0 z-40 backdrop-blur-lg">
