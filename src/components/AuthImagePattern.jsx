@@ -1,4 +1,3 @@
-import React from "react";
 
 const AuthImagePattern = ({ title, subtitle }) => {
   return (
@@ -22,3 +21,4 @@ const AuthImagePattern = ({ title, subtitle }) => {
 };
 
 export default AuthImagePattern;
+import React from "react";
